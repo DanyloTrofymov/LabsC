@@ -10,8 +10,8 @@ int main() {
         std::cout << "Введите длину ребра куба больше 0: ";
         std::cin >> a;
     }
-    std::cout << "Площадь боковой поверхности : " << 4 * a * a << std::endl
-    << Объем куба : " << a * a * a << std::endl;
+        std::cout << "Площадь боковой поверхности : " << 4 * a * a << std::endl
+        std::cout << "Объем куба : " << a * a * a << std::endl
      
     system("pause");
     return 0;
