@@ -4,15 +4,15 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "Russian");
     float a{};
-    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ñ€ÐµÐ±Ñ€Ð° ÐºÑƒÐ±Ð°: ";
+    std::cout << "Ââåäèòå äëèíó ðåáðà êóáà: ";
     std::cin >> a;
     while (a <= 0) {
-        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ñ€ÐµÐ±Ñ€Ð° ÐºÑƒÐ±Ð° Ð±Ð¾Ð»ÑŒÑˆÐµ 0: ";
+        std::cout << "Ââåäèòå äëèíó ðåáðà êóáà áîëüøå 0: ";
         std::cin >> a;
     }
-        std::cout << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ Ð±Ð¾ÐºÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸ : " << 4 * a * a << std::endl
-        std::cout << "ÐžÐ±ÑŠÐµÐ¼ ÐºÑƒÐ±Ð° : " << a * a * a << std::endl
-     
-    system("pause");
+    std::cout << "Ïëîùàäü áîêîâîé ïîâåðõíîñòè : " << 4 * a * a << std::endl;
+        std::cout << "Îáúåì êóáà : " << a * a * a << std::endl;
+
+        system("pause");
     return 0;
 }
