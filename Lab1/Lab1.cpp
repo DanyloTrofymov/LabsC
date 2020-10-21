@@ -1,17 +1,18 @@
+/*Трофимов Данило ІП-02
+Лабораторна робота 1
+Варіант 34*/
 #include <iostream>
 using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Russian");
     float a{};
-    std::cout << "Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ СЂРµР±СЂР° РєСѓР±Р°: ";
+    std::cout << "Введите длину ребра куба: ";
     std::cin >> a;
-    while (a <= 0) {
-        std::cout << "Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ СЂРµР±СЂР° РєСѓР±Р° Р±РѕР»СЊС€Рµ 0: ";
-        std::cin >> a;
-    }
-    std::cout << "РџР»РѕС‰Р°РґСЊ Р±РѕРєРѕРІРѕР№ РїРѕРІРµСЂС…РЅРѕСЃС‚Рё : " << 4 * a * a << std::endl;
-    std::cout << "РћР±СЉРµРј РєСѓР±Р° : " << a * a * a << std::endl;
+    float s = 4 * a * a;
+    float v = a * a * a;
+    std::cout << "Площадь боковой поверхности : " << s << std::endl;
+    std::cout << "Объем куба : " << v << std::endl;
 
         system("pause");
     return 0;
