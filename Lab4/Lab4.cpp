@@ -1,4 +1,7 @@
-﻿#include <iostream>
+﻿/*Трофимов Данило ІП-02
+Лабораторна робота 4
+Варіант 5*/
+#include <iostream>
 #include <cmath>
 using namespace std;
 
