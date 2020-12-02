@@ -32,10 +32,10 @@ int main() {
         if (n > 0) {
 
             for (int i = 0; i < n; i++)
-            {
+            
                 q = ((pow(x, i)) / fact(i));
                 s = s + q;
-            }
+            
             cout << "Сумма первыx " << n << " членов равна " << s << endl;
             break;
         }
