@@ -8,23 +8,18 @@
 
 using namespace std;
 
-float x, xmax, y, ymax, anglemax, angle, imax, q, qmax;
-int n;
 const float pi = 3.141592;
 
-float degree(float angle)
-{
-	return((angle * pi) / 180);
-}
+float degree(float angle);
 
-float square(float x1, float y1, float angle1)
-{
-	return((x1 * y1 * sin(degree(angle1))) / 2);
-}
+float square(float x1, float y1, float angle1);
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
+
+	float x, xmax, y, ymax, anglemax, angle, imax, q, qmax=0;
+	int n;
 
 	cout << "Введiть кiлькiсть трикутникiв: ";
 	cin >> n;
@@ -48,4 +43,14 @@ int main()
 	cout << "Найбiльший трикутник № " << imax << " зi сторонами " << xmax << " i " << ymax << ", кутом " << anglemax << " i площею " << qmax << endl;
 	system("pause");
 	return 0;
+}
+
+float degree(float angle)
+{
+	return((angle * pi) / 180);
+}
+
+float square(float x1, float y1, float angle1)
+{
+	return((x1 * y1 * sin(degree(angle1))) / 2);
 }
