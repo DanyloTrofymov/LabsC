@@ -42,13 +42,13 @@ int main()
 
     for (int startIndex = 0; startIndex < maxI - 1; ++startIndex)
     {
-        int smallestIndex = startIndex;
+        int biggestIndex = startIndex;
         for (int currentIndex = startIndex + 1; currentIndex < maxI; ++currentIndex)
         {
-            if (B[currentIndex] < B[smallestIndex])
-                smallestIndex = currentIndex;
+            if (B[currentIndex] > B[biggestIndex])
+                biggestIndex = currentIndex;
         }
-        swap(B[startIndex], B[smallestIndex]);
+        swap(B[startIndex], B[biggestIndex]);
     }
     cout << "Сортований масив до "<< maxI << " елемента" << endl;
 
@@ -57,7 +57,7 @@ int main()
 
     for (int i = maxI; i < n; ++i)
         cout << B[i] << ' ';
-
+    cout << endl;
 	system("pause");
 	return 0;
 }
